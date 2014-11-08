@@ -1,0 +1,30 @@
+{
+	"name": "cartesian-product",
+	"version": "2.1.2",
+	"author": "Izaak Schroeder <izaak.schroeder@gmail.com>",
+	"description": "Compute the cartesian product of an array.",
+	"keywords": [ "cartesian", "cartesian product", "array" ],
+	"license": "CC0-1.0",
+	"homepage": "https://github.com/izaakschroeder/cartesian-product",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/izaakschroeder/cartesian-product"
+	},
+	"main": "lib/product.js",
+	"scripts": {
+		"test": "npm run lint && npm run spec && npm run coverage",
+		"spec": "NODE_PATH=lib NODE_ENV=test istanbul cover node_modules/.bin/_mocha -- -r test/helpers/chai -R spec test/spec",
+		"lint": "eslint --ignore-path .gitignore .",
+		"coverage": "istanbul check-coverage --statement 100 --branch 100 --function 100"
+	},
+	"dependencies": {
+
+	},
+	"devDependencies": {
+		"eslint": "*",
+		"eslint-plugin-nodeca": "*",
+		"mocha": "*",
+		"istanbul": "*",
+		"chai": "*"
+	}
+}

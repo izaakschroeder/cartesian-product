@@ -1,4 +1,6 @@
 {
+	"parser": "@typescript-eslint/parser",
+
 	"env": {
 		"node": true
 	},
@@ -29,7 +31,7 @@
 		"nodeca/no-lodash-aliases": 2,
 		"quotes": [2, "single"],
 		"radix": 2,
-		"space-after-keywords": [2, "always"],
+		"keyword-spacing": [2, { "before": true, "after": true }],
 		"valid-jsdoc": [2, {
 			"prefer": {
 				"return": "returns"

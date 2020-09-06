@@ -8,3 +8,4 @@ insert_final_newline = true
 
 [*.js]
 indent_style = tab
+quote_type = single
